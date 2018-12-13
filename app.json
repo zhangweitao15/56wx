@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3bb4f2",
+    "navigationBarTitleText": "56电动物流网",
+    "navigationBarTextStyle":"#fff"
+  }
+}
