@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: '你好...',
+    text: ['首页','资讯', '选车', '买车', '租车', '二手车', '发货', '司机加盟', '56研究院', '黄金产业链', '视频'],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

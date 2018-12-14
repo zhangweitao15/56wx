@@ -1,6 +1,5 @@
 //logs.js
 const util = require('../../utils/util.js')
-
 Page({
   data: {
     logs: []
@@ -11,5 +10,6 @@ Page({
         return util.formatTime(new Date(log))
       })
     })
+    console.log(this.data)
   }
 })

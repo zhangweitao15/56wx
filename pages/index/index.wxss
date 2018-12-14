@@ -16,14 +16,17 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
-}
+/* .usermotto {
+  margin-top: 200rpx；
+}  */
 .nav {
-  width: 830px;
   display: flex;
-  overflow: auto;
+  background: #3bb4f2;
+  white-space: nowrap;
 }
 .nav navigator {
-  padding: 0 5rpx;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
 }
