@@ -5,10 +5,26 @@ const app = getApp()
 Page({
   data: {
     motto: '你好...',
+    imgUrls: [
+      {
+        link: '/pages/index/index',
+        url: '/images/1.jpg'
+      }, {
+        link: '/pages/logs/logs',
+        url: '/images/2.jpg'
+      }, {
+        link: '/pages/index/index',
+        url: '/images/3.jpg'
+      }
+    ],
+    indicatorDots: true,  //小点
+    autoplay: true,  //是否自动轮播
+    interval: 3000,  //间隔时间
+    duration: 1500,  //滑动时间
     text: ['首页','资讯', '选车', '买车', '租车', '二手车', '发货', '司机加盟', '56研究院', '黄金产业链', '视频'],
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
   clickMe() {

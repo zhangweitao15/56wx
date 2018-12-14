@@ -2,9 +2,27 @@
 <view class="container">
   <scroll-view scroll-x 
                class="nav">
-      <navigator wx:for="{{text}}" wx:for-item="t">{{t}}</navigator>
+    <navigator 
+      wx:for="{{text}}" 
+      wx:for-item="t"
+      >{{t}}</navigator>
   </scroll-view>
   
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}" 
+    circular="ture">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator url="{{item.link}}">
+          <image src='{{item.url}}' width='355' height='150'/>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
     <button bindtap="clickMe">点击</button>
