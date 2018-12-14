@@ -36,5 +36,15 @@ swiper {
 .slide-img image {
   width: 100%;
   height: 400rpx;
-  
+}
+.main {
+  padding: 20rpx 0;
+}
+.list-box {
+  display: flex;
+  font-size: 24rpx;
+}
+.list-box image {
+  width: 322rpx;
+  height: 162rpx;
 }

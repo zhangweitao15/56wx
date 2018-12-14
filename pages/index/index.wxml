@@ -23,7 +23,7 @@
       </swiper-item>
     </block>
   </swiper>
-  <view>
+  <view class='main'>
   <block wx:for="{{programme}}">
    <navigator class='list-box' url='{{item.url}}'>
      <image src='{{item.img}}'/>

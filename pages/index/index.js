@@ -20,17 +20,17 @@ Page({
     programme: [
       { url: '#',
         brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向',
-        img: '/iamges/list01.png',
+        img: '/images/list01.png',
         name: '56物流网 物流生态新物种',
         date: '12-22'
       }, { url: '#', 
         brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向', 
-        img: '/iamges/list02.png', 
+        img: '/images/list02.jpg', 
         name: '56物流网 物流生态新物种', 
         date: '10-15'
       }, { url: '#', 
         brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向', 
-        img: '/iamges/list03.png', 
+        img: '/images/list03.png', 
         name: '56物流网 物流生态新物种', 
         date: '9-25'
       }
