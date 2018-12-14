@@ -17,11 +17,40 @@ Page({
         url: '/images/3.jpg'
       }
     ],
+    programme: [
+      { url: '#',
+        brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向',
+        img: '/iamges/list01.png',
+        name: '56物流网 物流生态新物种',
+        date: '12-22'
+      }, { url: '#', 
+        brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向', 
+        img: '/iamges/list02.png', 
+        name: '56物流网 物流生态新物种', 
+        date: '10-15'
+      }, { url: '#', 
+        brief: '陕汽的未来何去何从？从陕汽重卡2019商务年会看未来发展新走向', 
+        img: '/iamges/list03.png', 
+        name: '56物流网 物流生态新物种', 
+        date: '9-25'
+      }
+    ],
+    texts: [
+      { text: '首页', url: '#'},
+      { text: '资讯', url: '#'},
+      { text: '选车', url: '#'},
+      { text: '租车', url: '#'},
+      { text: '二手车', url: '#'},
+      { text: '发货', url: '#'},
+      { text: '司机加盟', url: '#'},
+      { text: '56研究院', url: '#'},
+      { text: '黄金产业链', url: '#'},
+      { text: '视频', url: '#'}
+    ],
     indicatorDots: true,  //小点
     autoplay: true,  //是否自动轮播
     interval: 3000,  //间隔时间
-    duration: 1500,  //滑动时间
-    text: ['首页','资讯', '选车', '买车', '租车', '二手车', '发货', '司机加盟', '56研究院', '黄金产业链', '视频'],
+    duration: 1000,  //滑动时间
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -37,6 +66,7 @@ Page({
     })
   },
   onLoad: function () {
+    console.log(this.data.programme)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
