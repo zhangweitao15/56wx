@@ -38,13 +38,40 @@ swiper {
   height: 400rpx;
 }
 .main {
-  padding: 20rpx 0;
+  padding: 0 20rpx 20rpx;
+}
+.main > image {
+  padding-right: 20rpx;
+}
+.main .cont {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.cont>text {
+   font-size: 28rpx;
+}
+.cont .box-left {
+  display: flex;
+  color: #bbb;
+  align-items: center; 
+  justify-content: space-around;
 }
 .list-box {
   display: flex;
+  padding:10px 0;
   font-size: 24rpx;
+  border-bottom:1px solid #eee;
+
 }
-.list-box image {
+.list-box>image {
+  padding-right: 20rpx;
   width: 322rpx;
   height: 162rpx;
+}
+.box-left image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 80px;
+  border: 1px solid #ccc;
 }

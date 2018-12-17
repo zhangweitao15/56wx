@@ -30,9 +30,9 @@
      <view class='cont'>
        <text>{{item.brief}}</text>
        <view class='box-left'>
-         <!-- <image wx:if='{{item.icon}}'
+         <image wx:if='{{item.icon}}'
                 class='icon'
-                url='{{icon}}'></image> -->
+                src='{{item.icon}}'></image>
          <text>{{item.name}}</text>
          <text>{{item.date}}</text>
        </view>
