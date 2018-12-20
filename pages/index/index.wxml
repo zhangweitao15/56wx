@@ -1,46 +1,35 @@
 <!--index.wxml-->
 <view class="container">
-  <scroll-view scroll-x 
-               class="nav">
-    <navigator 
-      wx:for="{{texts}}" 
-      url="{{item.url}}"
-      >{{item.text}}</navigator>
+  <scroll-view scroll-x class="nav">
+    <navigator wx:for="{{texts}}" url="{{item.url}}">{{item.text}}</navigator>
   </scroll-view>
 
-  <swiper 
-    class='slide-img'
-    indicator-dots="{{indicatorDots}}"
-    autoplay="{{autoplay}}" 
-    interval="{{interval}}" 
-    duration="{{duration}}" 
-    circular="ture">
+  <swiper class='slide-img' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="ture">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
         <navigator url="{{item.link}}">
-          <image src='{{item.url}}'/>
+          <image src='{{item.url}}' />
         </navigator>
       </swiper-item>
     </block>
   </swiper>
+
   <view class='main'>
-  <block wx:for="{{programme}}">
-   <navigator class='list-box' url='{{item.url}}'>
-     <image src='{{item.img}}'/>
-     <view class='cont'>
-       <text>{{item.brief}}</text>
-       <view class='box-left'>
-         <image wx:if='{{item.icon}}'
-                class='icon'
-                src='{{item.icon}}'></image>
-         <text>{{item.name}}</text>
-         <text>{{item.date}}</text>
-       </view>
-     </view>
-   </navigator>
-  </block>
+    <block wx:for="{{programme}}">
+      <navigator class='list-box' url='{{item.url}}'>
+        <image src='{{item.img}}' />
+        <view class='cont'>
+          <text>{{item.brief}}</text>
+          <view class='box-left'>
+            <image wx:if='{{item.icon}}' class='icon' src='{{item.icon}}'></image>
+            <text>{{item.name}}</text>
+            <text>{{item.date}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
   </view>
-  
+
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
     <button bindtap="clickMe">点击</button>
