@@ -1,0 +1,15 @@
+<view class='main'>
+    <block wx:for="{{programme}}">
+      <navigator class='list-box' url='{{item.url}}'>
+        <image src='{{item.img}}' />
+        <view class='cont'>
+          <text>{{item.brief}}</text>
+          <view class='box-left'>
+            <image wx:if='{{item.icon}}' class='icon' src='{{item.icon}}'></image>
+            <text>{{item.name}}</text>
+            <text>{{item.date}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
